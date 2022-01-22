@@ -133,3 +133,23 @@ resource windowsVM 'Microsoft.Compute/virtualMachines@2021-07-01' = {
     }
   }
 }
+
+resource windowsVMExtensions 'Microsoft.Compute/virtualMachines/extensions@2021-07-01' = {
+  parent: windowsVM
+  name: 'winpackages'
+  location: region
+  properties: {
+    publisher: 'Microsoft.Compute'
+    type: 'CustomScriptExtension'
+    typeHandlerVersion: '1.10'
+    autoUpgradeMinorVersion: true
+    settings: {
+      fileUris: [
+        'https://raw.githubusercontent.com/hiryamada/labvm2/main/labvm.ps1'
+      ]
+    }
+    protectedSettings: {
+      commandToExecute: 'powershell -ExecutionPolicy Bypass -file labvm.ps1'
+    }
+  }
+}
