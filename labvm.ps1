@@ -11,7 +11,7 @@ regedit /s PriorityControl.reg
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 # install packages
-choco install -y git azure-cli az.powershell vscode dotnet-6.0-sdk-1xx microsoftazurestorageexplorer azure-functions-core-tools setdefaultbrowser
+choco install -y git azure-cli az.powershell vscode dotnet-6.0-sdk-1xx microsoftazurestorageexplorer azure-functions-core-tools googlechrome setdefaultbrowser
 
 # install httprepl
 & "C:\Program Files\dotnet\dotnet.exe" tool install -g Microsoft.dotnet-httprepl
