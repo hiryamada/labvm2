@@ -34,5 +34,5 @@ bash deploy.sh
 
 # Windowsの設定
 
-デフォルトブラウザ: Google Chrome
-Performance Options/Processor Scheduling/Adjust for best performance of: Program
+- デフォルトブラウザ: Google Chrome
+- Performance Options/Processor Scheduling/Adjust for best performance of: Program
