@@ -18,7 +18,7 @@ iwr -outf func-cli-x64.msi https://go.microsoft.com/fwlink/?linkid=2174087
 msiexec /i "func-cli-x64.msi" /passive /norestart
 
 # install httprepl
-& "C:\Program Files\dotnet\dotnet.exe" tool install -g Microsoft.dotnet-httprepl"
+& "C:\Program Files\dotnet\dotnet.exe tool install -g Microsoft.dotnet-httprepl"
 
 refreshenv
 
