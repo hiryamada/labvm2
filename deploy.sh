@@ -1,4 +1,5 @@
 #!/bin/bash
-az group create -n labvmrg -l japaneast
-sleep 5
-az deployment group create -g labvmrg -f labvm.bicep
+rg="labvm$RANDOM"
+az group create -n "$rg" -l japaneast
+sleep 1
+az deployment group create -g "$rg" -f labvm.bicep
