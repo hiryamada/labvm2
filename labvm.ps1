@@ -12,7 +12,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 # install packages
 # choco install -y git azure-cli az.powershell vscode dotnet-6.0-sdk-1xx microsoftazurestorageexplorer googlechrome setdefaultbrowser azure-data-studio microsoft-windows-terminal GoogleJapaneseInput powershell-core sakuraeditor quicklook sharex wox copyq insomnia-rest-api-client postman velocity
-cinst -y git azure-cli az.powershell googlechrome vscode dotnet setdefaultbrowser microsoft-windows-terminal cyberduck
+cinst -y git azure-cli az.powershell googlechrome vscode dotnet-sdk setdefaultbrowser microsoft-windows-terminal cyberduck
 
 # install Azure Function Core Tools 4.x (choco has only 3.x)
 iwr -outf func-cli-x64.msi https://go.microsoft.com/fwlink/?linkid=2174087
