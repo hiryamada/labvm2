@@ -5,7 +5,7 @@ param region string = 'japaneast'
 param computerName string = 'labvm'
 
 @description('VM size')
-param vmSize string = 'Standard_D4s_v5'
+param vmSize string = 'Standard_D2as_v4'
 
 @description('Windows login password for azureuser')
 param adminUsername string = 'azureuser'
